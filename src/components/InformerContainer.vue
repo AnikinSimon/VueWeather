@@ -3,18 +3,22 @@
         <TemperatureShow/> 
         <div class="flex-break"></div>
         <HumidityShow/> 
+        <div class="vertical-divider"></div>
+        <WindShow/> 
     </div>
 </template>
 
 <script>
     import TemperatureShow from './TemperatureShow.vue'
     import HumidityShow from './HumidityShow.vue'
+    import WindShow from './WindShow.vue'
 
     export default{
         name: 'InformerContainer',
         components: {
             TemperatureShow,
-            HumidityShow
+            HumidityShow,
+            WindShow
         }
     }
 </script>
@@ -37,5 +41,12 @@
     .flex-break{
         flex-basis: 100%;
         height: 0;
+    }
+    .vertical-divider{
+        height: 70px;
+        width: 1px;
+        background-color: #fff;
+        vertical-align: middle;
+        display: table-cell;
     }
 </style>

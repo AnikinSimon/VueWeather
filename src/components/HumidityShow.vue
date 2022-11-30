@@ -1,7 +1,7 @@
 <template>
     <div class="humidity">
         <img src="../assets/humidity.png"> 12 <small>%</small>
-      </div>
+    </div>
 </template>
 
 <script>
