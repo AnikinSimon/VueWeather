@@ -7,6 +7,7 @@
 <script>
 import InformerContainer from './components/InformerContainer.vue'
 
+
 export default {
   name: 'App',
   components: {

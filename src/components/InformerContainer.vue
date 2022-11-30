@@ -1,11 +1,17 @@
 <template>
     <div class="informer-container">
+        <TemperatureShow/> 
     </div>
 </template>
 
 <script>
+    import TemperatureShow from './TemperatureShow.vue'
+
     export default{
-        name: 'InformerContainer'
+        name: 'InformerContainer',
+        components: {
+            TemperatureShow
+        }
     }
 </script>
 
