@@ -3,7 +3,7 @@
         <img src="../assets/thermometer.png">
         <div class="temp-real">1</div>
         <div class="temp-feel">-3.8</div>
-      </div>
+    </div>
 </template>
 
 <script>
