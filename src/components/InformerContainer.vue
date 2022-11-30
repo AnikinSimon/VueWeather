@@ -1,10 +1,10 @@
 <template>
     <div class="informer-container">
-        <TemperatureShow/> 
+        <TemperatureShow :temperature-feel="temperatureFeel" :temperature-real="temperatureReal"/> 
         <div class="flex-break"></div>
-        <HumidityShow/> 
+        <HumidityShow :humidity="humidity"/> 
         <div class="vertical-divider"></div>
-        <WindShow/> 
+        <WindShow :wind="wind"/> 
     </div>
 </template>
 
@@ -19,6 +19,14 @@
             TemperatureShow,
             HumidityShow,
             WindShow
+        },
+        data() {
+            return {
+                temperatureReal: 1,
+                temperatureFeel: '-3.2',
+                humidity: 6,
+                wind: 20
+            }
         }
     }
 </script>

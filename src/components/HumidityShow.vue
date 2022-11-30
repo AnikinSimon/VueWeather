@@ -1,12 +1,15 @@
 <template>
     <div class="humidity">
-        <img src="../assets/humidity.png"> 12 <small>%</small>
+        <img src="../assets/humidity.png"> {{humidity}} <small>%</small>
     </div>
 </template>
 
 <script>
     export default{
-        name: 'HumidityShow'
+        name: 'HumidityShow',
+        props: {
+            humidity: Number
+        } 
     }
 </script>
 
